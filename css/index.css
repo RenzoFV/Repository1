@@ -4,3 +4,10 @@
     color:#ffff;
     font-family: monospace ;
 }
+.header{
+    background-color: #000;
+    margin: 1rem;
+    padding: 10px;
+    position:fixed
+
+}
