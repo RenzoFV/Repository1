@@ -1,30 +1,6 @@
-body{
+.body{
+    margin: 0px;
     background-color: #20232a;
-    color: #ffff;
+    color:#ffff;
+    font-family: monospace ;
 }
-a{
-    color: #ffff;
-}
-/*Por Clases*/
-.hero__info-link{
-    color: rgb(35, 21, 158);
-    background-color: rgb(106, 206, 231);
-}
-/*Por ID*/
-#heroInfoLink{
-    color: #ffff;
-}
-/*Por atributo 
-(Aplicará la declaración a todos los ancor que tenga como atributo "href")*/
-a[href]{
-    color: #ffff00;
-}
-/*Combinador por hermanos adyacentes
-Se selecciona a la clase que queremos dar como referencia, colocamos el +
-para especificar que lo que venga despues, se le aplique lo que queremos
-Además el ul tiene 5 hijos, los cuales tendrán la propiedad que le pasemos
-en este caso display:flex*/
-.header-nav__link-logo-container + ul{
-    display: flex;
-}
-
