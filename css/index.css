@@ -1,3 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 .body{
     background-color: #20232a;
     color:#ffff;
@@ -19,4 +23,11 @@
 }
 .header-container{
     padding: 0 1rem;
+}
+.header-nav__link-logo-container{
+    display: flex;
+}
+.header-nav__link-logo{
+    width:130px;
+    height: 115px;
 }
