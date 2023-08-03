@@ -22,6 +22,7 @@
     padding: 1rem 8rem 2rem 4rem; /*paddin:top, padding:right, padding:bottom, paddin:left respectivamente*/
 }
 .header-container{
+    display: flex;
     padding: 0 1rem;
 }
 .header-nav__link-logo-container{
@@ -30,4 +31,7 @@
 .header-nav__link-logo{
     width:130px;
     height: 115px;
+}
+.header-nav__menu-list-container{
+    display: flex;
 }
