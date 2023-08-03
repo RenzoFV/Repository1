@@ -1,13 +1,22 @@
 .body{
-    margin: 0px;
     background-color: #20232a;
     color:#ffff;
     font-family: monospace ;
+    margin: 0;
 }
 .header{
-    background-color: #000;
-    margin: 1rem;
-    padding: 10px;
-    position:fixed
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #20232a;
+    width: 100%;
+    box-shadow: 0 0 0.0625rem 0.0625rem #fff8;
+    /*El top funciona cuando el position es diferente de static (que es su valor por defecto)*/
+    /*z-index: 25;*/
+}
+.header-nav {
+    padding: 1rem 8rem 2rem 4rem; /*paddin:top, padding:right, padding:bottom, paddin:left respectivamente*/
+}
+.header-container{
+    padding: 0 1rem;
 }
