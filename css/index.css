@@ -223,7 +223,7 @@
         /*El 1024px condiciona para que el paragrah no se desborde y solo quede hasta ahí*/
         max-width: 1024px;
         padding: 0.75rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .i-Hero__info-paragrah{
         display: flex;
@@ -258,10 +258,10 @@
     display: block;
     fill: #282c34;
 }
-.Experience{
+.section{
     background-color:#282c34 ;
 }
-.Experience__title{
+.section__title{
     margin: 0;
 }
 
