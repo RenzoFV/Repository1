@@ -233,14 +233,14 @@
     position: relative;
 }
 .wave--rotate-180deg{
-    top: -0.125rem;
     transform: rotate(180deg);
+    margin: -1rem 0;
+    
 }
 .wave__wave{
     display: block;
     fill: #282c34;
 }
-
 
 .section{
     background-color:#282c34 ;
@@ -251,7 +251,7 @@
     max-width: 640px;
     padding: 0 1rem;
 }
-.container--test{
+.container--elements{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -282,13 +282,13 @@
     text-shadow: 0 0 0.125rem #61dafb;
     font-size: 1rem;
     
-
 }
 .card-exp__institution{
     margin: 0;
     font-size: 1.25rem;
 }
 .card-exp__grade{
+    font-weight: 300;
     margin: 0;
     text-shadow:0 0 0.125rem #61dafb ;
     font-size: 1rem;
@@ -298,12 +298,9 @@
     padding: 0;
     padding-left: 2rem;
     list-style: square;
-
-
 }
 .card-exp__activity{
     font-size: 0.875rem;
-
 
 }
 .button{
@@ -337,3 +334,28 @@
     box-shadow: 0 0 0.25rem 0 #61dafb;
 
 }
+@media (min-width:768px){
+    .section{
+        padding: 2rem 0;
+    }
+    .section__title{
+        font-size: 2rem; 
+    }
+    .card-exp__period{
+        font-size: 1.2rem;
+        
+    }
+    .card-exp__institution{
+        font-size: 1.5rem;
+    }
+    .card-exp__grade{
+        font-size: 1.2rem;
+    }
+    .card-exp__activity{
+        font-size: 1rem; 
+    }
+    .container{
+        max-width: 1024px;
+    }
+}
+
