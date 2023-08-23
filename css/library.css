@@ -1,0 +1,193 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #20232ae6;
+    width: 100%;
+    box-shadow: 0 0 0.0625rem 0.0625rem #fff8;
+    /*El top funciona cuando el position es diferente de static (que es su valor por defecto)*/
+    z-index: 25;
+}
+.header-nav {
+    padding: 1rem 0rem; /*paddin:top, padding:right, padding:bottom, paddin:left respectivamente*/
+}
+
+.header-nav__link-logo-container{
+    display: flex;
+}
+
+.header-nav__link-logo{
+    width:130px;
+    height: 115px;
+    background-color: #178ae7;
+}
+.icon {
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+.wave{
+    margin: 0;
+    position: relative;
+}
+.wave--rotate-180deg{
+    transform: rotate(180deg);
+    margin: -1rem 0;
+    
+}
+.wave__wave{
+    display: block;
+    fill: #282c34;
+}
+
+.section{
+    background-color:#282c34 ;
+    padding: 1.5rem 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 0 1rem;
+}
+.container--headed{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.container--elements{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.section__title{
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 0.25rem #61dafb;
+    text-align: center;
+
+}
+
+.section__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.card-exp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+
+}
+.card-exp__period{
+    margin: 0;
+    text-shadow: 0 0 0.125rem #61dafb;
+    font-size: 1rem;
+    
+}
+.card-exp__institution{
+    margin: 0;
+    font-size: 1.25rem;
+}
+.card-exp__grade{
+    font-weight: 300;
+    margin: 0;
+    text-shadow:0 0 0.125rem #61dafb ;
+    font-size: 1rem;
+}
+.card-exp__activities{
+    margin: 0;
+    padding: 0;
+    padding-left: 2rem;
+    list-style: square;
+}
+.card-exp__activity{
+    font-size: 0.875rem;
+
+}
+.button{
+    background-color: #20232a;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    border: #20232a;
+    font-family: monospace;
+    text-decoration: none;
+    cursor:pointer;
+    /*box-sizing: border-box;*/
+    transition: filter 0.50s;
+}
+.button:hover{
+    box-shadow: 0 0 0.25rem 0 #20232a;
+    filter: brightness(112.5%);
+}
+
+.button--primary{
+    background-color: #61dafb;
+    color: #000;
+    border: #61dafb 0.0625rem solid;
+
+}
+.button--primary:hover{
+    box-shadow: 0 0 0.25rem 0 #61dafb;
+
+}
+@media (min-width:768px){
+    .section{
+        padding: 2rem 0;
+    }
+    .section__title{
+        font-size: 2rem; 
+    }
+    .card-exp__period{
+        font-size: 1.2rem;
+        
+    }
+    .card-exp__institution{
+        font-size: 1.5rem;
+    }
+    .card-exp__grade{
+        font-size: 1.2rem;
+    }
+    .card-exp__activity{
+        font-size: 1rem; 
+    }
+    .container{
+        max-width: 1024px;
+    }
+    .form__input{
+        font-size: 1rem;
+    }
+    .button{
+        font-size: 1rem;
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.form__input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 0.125rem 0 #61dafb;
+    color: #fff;
+    outline: none;
+    transition: box-shadow 0.25s;
+}
+.form__input:invalid{
+    box-shadow: 
+    0 0 0.125rem 0 crimson,
+    0 0 0.25rem 0 crimson;
+
+}
+.form__input::placeholder{
+    color: #f5f5f5;
+
+}
