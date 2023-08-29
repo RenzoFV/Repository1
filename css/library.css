@@ -1,31 +1,6 @@
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #20232ae6;
-    width: 100%;
-    box-shadow: 0 0 0.0625rem 0.0625rem #fff8;
-    /*El top funciona cuando el position es diferente de static (que es su valor por defecto)*/
-    z-index: 25;
-}
-.header-nav {
-    padding: 1rem 0rem; /*paddin:top, padding:right, padding:bottom, paddin:left respectivamente*/
-}
-
-.header-nav__link-logo-container{
-    display: flex;
-}
-
-.header-nav__link-logo{
-    width:130px;
-    height: 115px;
-    background-color: #178ae7;
-}
-.icon {
-    color: #fff;
-    font-size: 1.75rem;
-}
-
+@import url('./modules/menu.css');
+@import url('./modules/headed.css');
+@import url('./modules/section.css');
 .wave{
     margin: 0;
     position: relative;
@@ -40,40 +15,6 @@
     fill: #282c34;
 }
 
-.section{
-    background-color:#282c34 ;
-    padding: 1.5rem 0;
-}
-.container{
-    margin: 0 auto;
-    max-width: 640px;
-    padding: 0 1rem;
-}
-.container--headed{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-.container--elements{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-}
-.section__title{
-    margin: 0;
-    font-size: 1.5rem;
-    text-shadow: 0 0 0.25rem #61dafb;
-    text-align: center;
-
-}
-
-.section__cards{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    
-}
 .card-exp{
     display: flex;
     flex-direction: column;
@@ -137,12 +78,6 @@
 
 }
 @media (min-width:768px){
-    .section{
-        padding: 2rem 0;
-    }
-    .section__title{
-        font-size: 2rem; 
-    }
     .card-exp__period{
         font-size: 1.2rem;
         
@@ -189,5 +124,4 @@
 }
 .form__input::placeholder{
     color: #f5f5f5;
-
 }

@@ -1,0 +1,20 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #20232ae6;
+    width: 100%;
+    box-shadow: 0 0 0.0625rem 0.0625rem #fff8;
+    /*El top funciona cuando el position es diferente de static (que es su valor por defecto)*/
+    z-index: 25;
+}
+.nav {
+    padding: 1rem 0rem; /*paddin:top, padding:right, padding:bottom, paddin:left respectivamente*/
+}
+
+.nav__link-logo{
+    display: block;
+    width:130px;
+    height: 115px;
+    background-color: #178ae7;
+}

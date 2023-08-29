@@ -9,57 +9,10 @@
     margin: 0;
 }
 
-.menu-checkbox{
-    display: none;
-}
-.menu-checkbox:checked + .menu--hamburger{
+.menu--checkbox:checked + .menu--hamburger{
     left: 0;
 }
 
-.header-nav__menu-list-container{
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.header-nav__menu-link{
-    position: relative;
-    color: #ffff;
-    text-decoration: none;
-    font-weight: 700;  
-}
-.menu--hamburger{
-    position: fixed;
-    top: 9.24rem;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#20232a,#282c34);
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    transition: left 0.25s;
-}
-
-.header-nav__menu-link:hover, .header-nav__menu-link--active{
-    color: rgb(0, 238, 255);
-    transition: color 0.75s;
-}
-.header-nav__menu-link::before{
-    content: '';
-    position: absolute;
-    height: 0.0625rem;
-    width: 0;
-    background-color: gold;
-    left: 0;
-    bottom: -0.125rem;
-    transition: width 0.25s;
-}
-.header-nav__menu-link:hover::before{
-    width: 100%;
-}
 @media (min-width:768){
     .header-container{
         max-width: 1024px;
@@ -93,17 +46,7 @@
     background-image: linear-gradient(transparent,#20232a);
     height: 2rem;
 }
-.i-Hero__container{
-    padding: 0 1rem;
-    z-index: 5;
-    gap: 2.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    flex-direction: column;
-    margin: 0 auto;
 
-
-}
 .i-Hero__info-container{
     display: flex;
     gap:1rem;
@@ -193,12 +136,6 @@
     transform: translate(-50%, -50%) rotate(-90deg);
 }
 @media (min-width:768px){
-    .i-Hero__container{
-        /*El 1024px condiciona para que el paragrah no se desborde y solo quede hasta ahí*/
-        max-width: 1024px;
-        padding: 0.75rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
     .i-Hero__info-paragrah{
         display: flex;
         font-size: 1.25rem;
@@ -217,15 +154,5 @@
     }
     .i-Hero__info-link{
         font-size: 1rem;
-    }
-    .menu--hamburger{
-        position: static;
-        flex-direction: row;
-        background-image: none;
-        gap: 1rem;
-        width: auto;
-    }
-    .icon{
-        display: none;
     }
 }
