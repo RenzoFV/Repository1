@@ -1,0 +1,92 @@
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card--hero{
+    align-items: center;
+    gap: 1rem;
+    max-width: 512px;
+    text-align: center;
+}
+
+.card--exp{
+    background-color: #282c34;
+    gap: 0.125rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    transition: background color 0.25s;
+}
+.card--exp:hover{
+    background-color: #20232a;
+}
+.card-title{
+    font-family: caprasimo ;
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+}
+.card-title--lg{
+    font-size: 3rem;
+}
+.card-title--md{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card-subtitle{
+    margin: 0;
+    font-size: 2rem;
+}
+.card-paragrah{
+    display: none;
+}
+.card-subtitle{
+    font-size: 1rem;
+    margin: 0;
+}
+.card-subtitle--lg{
+    font-size: 1.25rem;
+}
+.card-subtitle--sm{
+    font-size: 0.875rem;
+    text-shadow: 0 0 0.125rem #61dafb;
+}
+.card-subtitle--ts{
+    text-shadow: 0 0 0.125rem #61dafb;
+}
+.card-subtitle--fw{
+    font-weight: 300px;
+}
+
+
+/*.card-exp__grade{
+    font-weight: 300;
+}*/
+
+.card-exp__period{
+    text-shadow: 0 0 0.125rem #61dafb;
+    font-size: 1rem;
+    
+}
+
+.card-exp__activities{
+    margin: 0;
+    padding: 0;
+    padding-left: 2rem;
+    list-style: square;
+}
+.card-exp__activity{
+    font-size: 0.875rem;
+
+}
+
+@media (min-width:768px){
+    .card-paragrah{
+        display: flex;
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0;
+    }
+}

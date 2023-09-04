@@ -1,6 +1,7 @@
 @import url('./modules/menu.css');
 @import url('./modules/headed.css');
 @import url('./modules/section.css');
+@import url('./modules/card.css');
 .wave{
     margin: 0;
     position: relative;
@@ -15,38 +16,6 @@
     fill: #282c34;
 }
 
-.card-exp{
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-
-}
-.card-exp__period{
-    margin: 0;
-    text-shadow: 0 0 0.125rem #61dafb;
-    font-size: 1rem;
-    
-}
-.card-exp__institution{
-    margin: 0;
-    font-size: 1.25rem;
-}
-.card-exp__grade{
-    font-weight: 300;
-    margin: 0;
-    text-shadow:0 0 0.125rem #61dafb ;
-    font-size: 1rem;
-}
-.card-exp__activities{
-    margin: 0;
-    padding: 0;
-    padding-left: 2rem;
-    list-style: square;
-}
-.card-exp__activity{
-    font-size: 0.875rem;
-
-}
 .button{
     background-color: #20232a;
     border-radius: 0.5rem;
@@ -77,30 +46,7 @@
     box-shadow: 0 0 0.25rem 0 #61dafb;
 
 }
-@media (min-width:768px){
-    .card-exp__period{
-        font-size: 1.2rem;
-        
-    }
-    .card-exp__institution{
-        font-size: 1.5rem;
-    }
-    .card-exp__grade{
-        font-size: 1.2rem;
-    }
-    .card-exp__activity{
-        font-size: 1rem; 
-    }
-    .container{
-        max-width: 1024px;
-    }
-    .form__input{
-        font-size: 1rem;
-    }
-    .button{
-        font-size: 1rem;
-    }
-}
+
 .form{
     display: flex;
     flex-direction: column;
